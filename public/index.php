@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iglesia de Restauración Adonai - Inicio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    nav ul li.group:hover > ul {
+      display: block;
+    }
+  </style>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="bg-white shadow sticky top-0 z-50">
+
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+```
+<!-- Logo / Nombre -->
+<h1 class="text-xl font-bold text-blue-700">
+  Iglesia de Restauración Adonai
+</h1>
+
+<!-- Botón móvil -->
+<button id="btn-menu" class="md:hidden text-blue-700">
+  ☰
+</button>
+
+<!-- Menú escritorio -->
+<ul id="menu" class="hidden md:flex items-center space-x-6 text-sm font-medium">
+
+  <li>
+    <a href="index.php" class="text-blue-700 font-semibold">
+      Inicio
+    </a>
+  </li>
+
+  <li>
+    <a href="nosotros.php" class="hover:text-blue-700">
+      Nosotros
+    </a>
+  </li>
+
+  <!-- Ministerios -->
+  <li class="group relative">
+    <span class="hover:text-blue-700 cursor-pointer">
+      Ministerios ▾
+    </span>
+
+    <ul class="absolute hidden group-hover:block bg-white shadow rounded mt-2 w-56 text-left">
+
+      <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Hombres de Valor</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Impacto Juvenil</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Semillitas de Adonai</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Mujeres</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Alabanza</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Saltos de Gloria</a></li>
+
+    </ul>
+  </li>
+
+  <li>
+    <a href="eventos.php" class="hover:text-blue-700">
+      Eventos
+    </a>
+  </li>
+
+  <li>
+    <a href="galeria.php" class="hover:text-blue-700">
+      Galería
+    </a>
+  </li>
+
+  <li>
+    <a href="contacto.php" class="hover:text-blue-700">
+      Contacto
+    </a>
+  </li>
+
+  <!-- Botón Donar -->
+  <li>
+    <a href="donar.php"
+       class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded font-semibold">
+      Donar
+    </a>
+  </li>
+
+  <!-- Login -->
+  <li>
+    <a href="login.php"
+       class="border border-blue-700 text-blue-700 px-4 py-2 rounded hover:bg-blue-700 hover:text-white">
+      Iniciar sesión
+    </a>
+  </li>
+
+</ul>
+```
+
+  </div>
+
+  <!-- Menú móvil -->
+
+  <div id="mobile-menu" class="md:hidden hidden bg-white shadow">
+
+```
+<ul class="flex flex-col p-4 space-y-2 font-medium">
+
+  <li><a href="index.php">Inicio</a></li>
+  <li><a href="nosotros.php">Nosotros</a></li>
+
+  <!-- Ministerios -->
+  <li class="font-semibold mt-3 text-gray-700">
+    Ministerios
+  </li>
+
+  <li class="ml-4"><a href="#">Hombres de Valor</a></li>
+  <li class="ml-4"><a href="#">Impacto Juvenil</a></li>
+  <li class="ml-4"><a href="#">Semillitas de Adonai</a></li>
+  <li class="ml-4"><a href="#">Ministerio de Mujeres</a></li>
+  <li class="ml-4"><a href="#">Ministerio de Alabanza</a></li>
+  <li class="ml-4"><a href="#">Saltos de Gloria</a></li>
+
+  <li class="mt-3"><a href="eventos.php">Eventos</a></li>
+  <li><a href="galeria.php">Galería</a></li>
+  <li><a href="contacto.php">Contacto</a></li>
+
+  <li class="mt-3">
+    <a href="donar.php"
+       class="bg-yellow-500 text-white px-3 py-2 rounded block text-center">
+      Donar
+    </a>
+  </li>
+
+  <li>
+    <a href="login.php"
+       class="border border-blue-700 text-blue-700 px-3 py-2 rounded block text-center">
+      Iniciar sesión
+    </a>
+  </li>
+
+</ul>
+
+```
+
+  </div>
+
+</nav>
+
+<!-- ================= HERO SLIDER ================= -->
+
+<section class="relative w-full h-[80vh] overflow-hidden">
+
+  <!-- Slides -->
+  <div id="hero-slider" class="relative w-full h-full">
+
+    <!-- Slide 1 -->
+    <div class="slide absolute inset-0 flex items-center justify-center bg-blue-900 text-white text-center px-6 transition-opacity duration-700 opacity-100">
+
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          Bienvenidos a la Iglesia de Restauración Adonai
+        </h2>
+
+        <p class="text-lg md:text-xl mb-8">
+          Un lugar para crecer en fe, esperanza y amor.
+        </p>
+
+        <a href="contacto.php"
+           class="bg-yellow-500 hover:bg-yellow-600 px-8 py-3 rounded font-semibold text-lg">
+          Visítanos
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide absolute inset-0 flex items-center justify-center bg-blue-800 text-white text-center px-6 transition-opacity duration-700 opacity-0">
+
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          Horarios de Culto
+        </h2>
+
+        <p class="text-lg md:text-xl mb-8">
+          Domingo 9:00 AM y 6:00 PM
+        </p>
+
+        <a href="contacto.php"
+           class="bg-yellow-500 hover:bg-yellow-600 px-8 py-3 rounded font-semibold text-lg">
+          Ver ubicación
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide absolute inset-0 flex items-center justify-center bg-blue-700 text-white text-center px-6 transition-opacity duration-700 opacity-0">
+
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          Mira nuestra transmisión en vivo
+        </h2>
+
+        <p class="text-lg md:text-xl mb-8">
+          Conéctate y recibe la palabra desde casa
+        </p>
+
+        <a href="#transmision"
+           class="bg-yellow-500 hover:bg-yellow-600 px-8 py-3 rounded font-semibold text-lg">
+          Ver transmisión
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Flechas -->
+  <button id="prevSlide"
+          class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white text-blue-900 px-3 py-2 rounded-full text-xl">
+    ‹
+  </button>
+
+  <button id="nextSlide"
+          class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white text-blue-900 px-3 py-2 rounded-full text-xl">
+    ›
+  </button>
+
+  <!-- Indicadores -->
+  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
+    <span class="indicator w-3 h-3 bg-white rounded-full cursor-pointer"></span>
+    <span class="indicator w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
+    <span class="indicator w-3 h-3 bg-white/50 rounded-full cursor-pointer"></span>
+  </div>
+
+</section>
+
+<script>
+  const slides = document.querySelectorAll(".slide");
+  const indicators = document.querySelectorAll(".indicator");
+  const nextBtn = document.getElementById("nextSlide");
+  const prevBtn = document.getElementById("prevSlide");
+
+  let index = 0;
+
+  function showSlide(i) {
+    slides.forEach((slide, idx) => {
+      slide.style.opacity = idx === i ? "1" : "0";
+      indicators[idx].classList.toggle("bg-white", idx === i);
+      indicators[idx].classList.toggle("bg-white/50", idx !== i);
+    });
+    index = i;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  }
+
+  nextBtn.addEventListener("click", nextSlide);
+  prevBtn.addEventListener("click", prevSlide);
+
+  indicators.forEach((dot, i) => {
+    dot.addEventListener("click", () => showSlide(i));
+  });
+
+  // Autoplay cada 5 segundos
+  setInterval(nextSlide, 5000);
+</script>
+
+
+ <!-- ================= TRANSMISIÓN EN VIVO ================= -->
+
+<section class="bg-gray-900 text-white py-16">
+
+  <div class="max-w-6xl mx-auto px-4 text-center">
+
+```
+<h2 class="text-3xl font-bold mb-6">
+  🔴 Transmisión en Vivo
+</h2>
+
+<p class="text-gray-300 mb-8">
+  Únete a nuestra transmisión en vivo o mira el último servicio.
+</p>
+
+<!-- Video embed -->
+<div class="aspect-video mb-8 rounded overflow-hidden shadow-lg">
+
+  <iframe
+    class="w-full h-full"
+    src="https://www.youtube.com/embed/GSuWVzc1-w4"
+    title="Transmisión en vivo"
+    allowfullscreen>
+  </iframe>
+
+</div>
+
+<a href="https://youtube.com"
+   target="_blank"
+   class="bg-red-600 hover:bg-red-700 px-8 py-3 rounded font-semibold">
+  Ver en YouTube
+</a>
+```
+
+  </div>
+
+</section>
+
+<!-- ================= HORARIOS + UBICACIÓN ================= -->
+
+<section class="bg-gray-100 py-16">
+
+  <div class="max-w-6xl mx-auto px-4">
+
+```
+<h2 class="text-3xl font-bold text-blue-700 text-center mb-12">
+  Información de la Iglesia
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+  <!-- Horarios -->
+  <div class="bg-white p-8 rounded-xl shadow text-center">
+
+    <h3 class="text-xl font-semibold text-blue-700 mb-4">
+      Horarios de Culto
+    </h3>
+
+    <p class="text-gray-700">
+      <strong>Domingos</strong><br>
+      8:00 AM – 10:00 AM<br>
+      10:00 AM – 12:00 PM
+    </p>
+
+    <p class="mt-4 text-gray-700">
+      <strong>Miércoles</strong><br>
+      7:00 PM
+    </p>
+
+  </div>
+
+  <!-- Ubicación -->
+  <div class="bg-white p-8 rounded-xl shadow text-center">
+
+    <h3 class="text-xl font-semibold text-blue-700 mb-4">
+      Ubicación
+    </h3>
+
+    <p class="text-gray-700 mb-4">
+      Av. Principal #123<br>
+      Ciudad, País
+    </p>
+
+    <a href="#"
+       class="text-blue-700 font-semibold hover:underline">
+      Ver en Google Maps
+    </a>
+
+  </div>
+
+  <!-- Contacto -->
+  <div class="bg-white p-8 rounded-xl shadow text-center">
+
+    <h3 class="text-xl font-semibold text-blue-700 mb-4">
+      Contáctanos
+    </h3>
+
+    <p class="text-gray-700">
+      📞 +123 456 7890<br>
+      ✉ info@iglesiaadonai.org
+    </p>
+
+    <a href="contacto.php"
+       class="inline-block mt-4 bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded">
+      Escríbenos
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- ================= MINISTERIOS ================= -->
+
+<section class="py-16 bg-white">
+
+  <div class="max-w-6xl mx-auto px-4">
+
+```
+<h2 class="text-3xl font-bold text-blue-700 text-center mb-12">
+  Nuestros Ministerios
+</h2>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+  <!-- Hombres -->
+  <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+    <img src="https://source.unsplash.com/600x400/?men,church" class="w-full h-40 object-cover">
+    <div class="p-4 text-center">
+      <h3 class="font-semibold">Hombres de Valor</h3>
+    </div>
+  </div>
+
+  <!-- Jóvenes -->
+  <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+    <img src="https://source.unsplash.com/600x400/?youth,church" class="w-full h-40 object-cover">
+    <div class="p-4 text-center">
+      <h3 class="font-semibold">Impacto Juvenil</h3>
+    </div>
+  </div>
+
+  <!-- Niños -->
+  <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+    <img src="https://source.unsplash.com/600x400/?children,church" class="w-full h-40 object-cover">
+    <div class="p-4 text-center">
+      <h3 class="font-semibold">Semillitas de Adonai</h3>
+    </div>
+  </div>
+
+  <!-- Mujeres -->
+  <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+    <img src="https://source.unsplash.com/600x400/?women,church" class="w-full h-40 object-cover">
+    <div class="p-4 text-center">
+      <h3 class="font-semibold">Ministerio de Mujeres</h3>
+    </div>
+  </div>
+
+  <!-- Alabanza -->
+  <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+    <img src="https://source.unsplash.com/600x400/?worship,church" class="w-full h-40 object-cover">
+    <div class="p-4 text-center">
+      <h3 class="font-semibold">Ministerio de Alabanza</h3>
+    </div>
+  </div>
+
+  <!-- Danza -->
+  <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+    <img src="https://source.unsplash.com/600x400/?dance,worship" class="w-full h-40 object-cover">
+    <div class="p-4 text-center">
+      <h3 class="font-semibold">Danza Saltos de Gloria</h3>
+    </div>
+  </div>
+
+  <!-- Evangelismo -->
+  <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+    <img src="https://source.unsplash.com/600x400/?mission,church" class="w-full h-40 object-cover">
+    <div class="p-4 text-center">
+      <h3 class="font-semibold">Evangelismo y Consolidación</h3>
+    </div>
+  </div>
+
+  <!-- Diáconos -->
+  <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+    <img src="https://source.unsplash.com/600x400/?community,church" class="w-full h-40 object-cover">
+    <div class="p-4 text-center">
+      <h3 class="font-semibold">Diáconos y Ujieres</h3>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+ 
+<!-- ================= ÚLTIMAS PRÉDICAS ================= -->
+
+<section class="py-16 bg-gray-100">
+
+  <div class="max-w-6xl mx-auto px-4">
+
+```
+<h2 class="text-3xl font-bold text-blue-700 text-center mb-12">
+  Últimas Prédicas
+</h2>
+
+<div class="grid md:grid-cols-2 gap-8">
+
+  <!-- Video 1 -->
+  <div class="bg-white rounded-xl shadow overflow-hidden">
+    <div class="aspect-video">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/YgXY2yE6rtA"
+        title="Prédica 1"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-lg">
+        Prédica: DESAFIO 2026 SIGUEME
+      </h3>
+    </div>
+  </div>
+
+  <!-- Video 2 -->
+  <div class="bg-white rounded-xl shadow overflow-hidden">
+    <div class="aspect-video">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/DvJNLy7nxwA"
+        title="Prédica 2"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-lg">
+        Prédica: NO ENTIENDO PERO DECIDO CONFIAR
+      </h3>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- ================= ÚLTIMOS EVENTOS ================= -->
+
+<section class="bg-gray-100 py-16">
+
+  <div class="max-w-6xl mx-auto px-4">
+
+```
+<h2 class="text-3xl font-bold text-center text-blue-700 mb-12">
+  Últimos eventos
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+  <!-- Evento 1 -->
+  <div class="bg-white rounded shadow overflow-hidden">
+
+    <img src="img/evento1.jpg" alt="Evento iglesia"
+         class="w-full h-48 object-cover">
+
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">
+        Noche de adoración
+      </h3>
+
+      <p class="text-gray-600 mb-4">
+        Una noche especial de alabanza y adoración en la presencia de Dios.
+      </p>
+
+      <a href="eventos.php"
+         class="text-blue-700 font-semibold hover:underline">
+        Ver más →
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Evento 2 -->
+  <div class="bg-white rounded shadow overflow-hidden">
+
+    <img src="img/evento2.jpg" alt="Evento iglesia"
+         class="w-full h-48 object-cover">
+
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">
+        Congreso juvenil
+      </h3>
+
+      <p class="text-gray-600 mb-4">
+        Jóvenes reunidos para aprender y crecer espiritualmente.
+      </p>
+
+      <a href="eventos.php"
+         class="text-blue-700 font-semibold hover:underline">
+        Ver más →
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Evento 3 -->
+  <div class="bg-white rounded shadow overflow-hidden">
+
+    <img src="img/evento3.jpg" alt="Evento iglesia"
+         class="w-full h-48 object-cover">
+
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">
+        Servicio especial
+      </h3>
+
+      <p class="text-gray-600 mb-4">
+        Celebración especial con toda la congregación.
+      </p>
+
+      <a href="eventos.php"
+         class="text-blue-700 font-semibold hover:underline">
+        Ver más →
+      </a>
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- ================= PRÓXIMOS EVENTOS ================= -->
+
+<section class="py-16 bg-white">
+
+  <div class="max-w-6xl mx-auto px-4">
+
+```
+<h2 class="text-3xl font-bold text-center text-blue-700 mb-12">
+  Próximos Eventos
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+  <!-- Evento 1 -->
+  <div class="bg-gray-100 rounded shadow p-6">
+
+    <h3 class="text-xl font-semibold mb-2">
+      Servicio Especial de Avivamiento
+    </h3>
+
+    <p class="text-sm text-gray-600 mb-2">
+      📅 Domingo 15 - 7:00 PM
+    </p>
+
+    <p class="mb-4">
+      Una noche de adoración y palabra para toda la familia.
+    </p>
+
+    <a href="eventos.php"
+       class="text-blue-700 font-semibold hover:underline">
+      Ver detalles →
+    </a>
+
+  </div>
+
+  <!-- Evento 2 -->
+  <div class="bg-gray-100 rounded shadow p-6">
+
+    <h3 class="text-xl font-semibold mb-2">
+      Encuentro Juvenil
+    </h3>
+
+    <p class="text-sm text-gray-600 mb-2">
+      📅 Viernes 20 - 6:30 PM
+    </p>
+
+    <p class="mb-4">
+      Reunión especial para jóvenes con dinámicas y enseñanza.
+    </p>
+
+    <a href="eventos.php"
+       class="text-blue-700 font-semibold hover:underline">
+      Ver detalles →
+    </a>
+
+  </div>
+
+  <!-- Evento 3 -->
+  <div class="bg-gray-100 rounded shadow p-6">
+
+    <h3 class="text-xl font-semibold mb-2">
+      Jornada de Evangelismo
+    </h3>
+
+    <p class="text-sm text-gray-600 mb-2">
+      📅 Sábado 28 - 9:00 AM
+    </p>
+
+    <p class="mb-4">
+      Salida misionera para compartir el mensaje de esperanza.
+    </p>
+
+    <a href="eventos.php"
+       class="text-blue-700 font-semibold hover:underline">
+      Ver detalles →
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- ================= TESTIMONIOS ================= -->
+
+<section class="py-16 bg-gray-100">
+
+  <div class="max-w-6xl mx-auto px-4">
+
+```
+<h2 class="text-3xl font-bold text-center text-blue-700 mb-12">
+  Testimonios
+</h2>
+
+<div class="grid md:grid-cols-2 gap-8">
+
+  <!-- Testimonio 1 -->
+  <div class="bg-white p-8 rounded shadow hover:shadow-lg transition">
+
+    <p class="italic text-gray-700 mb-6">
+      "Dios transformó mi vida en este lugar. Encontré esperanza,
+      restauración y una familia espiritual."
+    </p>
+
+    <h3 class="font-semibold text-blue-700">
+      — Nombre Apellido
+    </h3>
+
+  </div>
+
+  <!-- Testimonio 2 -->
+  <div class="bg-white p-8 rounded shadow hover:shadow-lg transition">
+
+    <p class="italic text-gray-700 mb-6">
+      "Cada servicio fortalece mi fe. Estoy agradecido por todo lo
+      que Dios ha hecho en mi vida a través de esta iglesia."
+    </p>
+
+    <h3 class="font-semibold text-blue-700">
+      — Nombre Apellido
+    </h3>
+
+  </div>
+
+  <!-- Testimonio 3 -->
+  <div class="bg-white p-8 rounded shadow hover:shadow-lg transition">
+
+    <p class="italic text-gray-700 mb-6">
+      "Aquí encontré propósito y dirección espiritual.
+      Ha sido una bendición para mi familia."
+    </p>
+
+    <h3 class="font-semibold text-blue-700">
+      — Nombre Apellido
+    </h3>
+
+  </div>
+
+  <!-- Testimonio 4 -->
+  <div class="bg-white p-8 rounded shadow hover:shadow-lg transition">
+
+    <p class="italic text-gray-700 mb-6">
+      "Esta iglesia ha sido un instrumento de Dios para mi crecimiento
+      espiritual y personal."
+    </p>
+
+    <h3 class="font-semibold text-blue-700">
+      — Nombre Apellido
+    </h3>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+
+<!-- ================= GALERÍA ANIMADA FULL WIDTH ================= -->
+
+<section class="w-full overflow-hidden mt-12 py-12 bg-gray-100">
+
+  <div class="w-full overflow-hidden">
+
+```
+<div id="carousel"
+     class="flex space-x-6 animate-scroll hover:[animation-play-state:paused] px-6">
+
+  <!-- IMÁGENES -->
+
+  <a href="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=800&q=80"
+     class="flex-shrink-0 w-72 rounded shadow-lg cursor-pointer">
+    <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=400&q=80"
+         alt="Imagen 1"
+         loading="lazy"
+         class="w-full h-44 object-cover rounded" />
+  </a>
+
+  <a href="https://images.unsplash.com/photo-1601758003122-58e5f563c2c5?auto=format&fit=crop&w=800&q=80"
+     class="flex-shrink-0 w-72 rounded shadow-lg cursor-pointer">
+    <img src="https://images.unsplash.com/photo-1601758003122-58e5f563c2c5?auto=format&fit=crop&w=400&q=80"
+         alt="Imagen 2"
+         loading="lazy"
+         class="w-full h-44 object-cover rounded" />
+  </a>
+
+  <a href="https://images.unsplash.com/photo-1557506123-afe2b611e998?auto=format&fit=crop&w=800&q=80"
+     class="flex-shrink-0 w-72 rounded shadow-lg cursor-pointer">
+    <img src="https://images.unsplash.com/photo-1557506123-afe2b611e998?auto=format&fit=crop&w=400&q=80"
+         alt="Imagen 3"
+         loading="lazy"
+         class="w-full h-44 object-cover rounded" />
+  </a>
+
+  <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+     class="flex-shrink-0 w-72 rounded shadow-lg cursor-pointer">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+         alt="Imagen 4"
+         loading="lazy"
+         class="w-full h-44 object-cover rounded" />
+  </a>
+
+  <!-- DUPLICADAS para scroll infinito -->
+
+  <a href="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=800&q=80"
+     class="flex-shrink-0 w-72 rounded shadow-lg cursor-pointer">
+    <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=400&q=80"
+         alt="Imagen 1"
+         loading="lazy"
+         class="w-full h-44 object-cover rounded" />
+  </a>
+
+  <a href="https://images.unsplash.com/photo-1601758003122-58e5f563c2c5?auto=format&fit=crop&w=800&q=80"
+     class="flex-shrink-0 w-72 rounded shadow-lg cursor-pointer">
+    <img src="https://images.unsplash.com/photo-1601758003122-58e5f563c2c5?auto=format&fit=crop&w=400&q=80"
+         alt="Imagen 2"
+         loading="lazy"
+         class="w-full h-44 object-cover rounded" />
+  </a>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<style>
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+</style>
+
+<!-- ================= CTA FINAL ================= -->
+
+<section class="bg-blue-900 text-white py-16 text-center">
+
+  <div class="max-w-4xl mx-auto px-6">
+
+```
+<h2 class="text-3xl md:text-4xl font-bold mb-6">
+  ¡Te esperamos este domingo!
+</h2>
+
+<p class="text-lg mb-8 text-gray-200">
+  Ven y sé parte de una comunidad donde encontrarás fe, esperanza y restauración.
+  Nuestras puertas están abiertas para ti y tu familia.
+</p>
+
+<div class="flex flex-col md:flex-row justify-center gap-4">
+
+  <a href="contacto.php"
+     class="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded font-semibold">
+    Planear mi visita
+  </a>
+
+  <a href="https://maps.google.com"
+     target="_blank"
+     class="border border-white px-8 py-3 rounded hover:bg-white hover:text-blue-900">
+    Cómo llegar
+  </a>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-gray-900 text-gray-300 pt-14 pb-8">
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+
+```
+<!-- Iglesia -->
+<div>
+  <h3 class="text-white font-bold text-lg mb-4">
+    Iglesia de Restauración Adonai
+  </h3>
+
+  <p class="text-sm">
+    Restaurados para restaurar vidas, familias y corazones a través del amor de Cristo.
+  </p>
+</div>
+
+<!-- Horarios -->
+<div>
+  <h3 class="text-white font-bold mb-4">
+    Horarios
+  </h3>
+
+  <ul class="space-y-2 text-sm">
+    <li>Domingo: 8:00 AM – 12:00 PM</li>
+    <li>Miércoles: 7:00 PM</li>
+  </ul>
+</div>
+
+<!-- Enlaces -->
+<div>
+  <h3 class="text-white font-bold mb-4">
+    Enlaces rápidos
+  </h3>
+
+  <ul class="space-y-2 text-sm">
+
+    <li><a href="nosotros.php" class="hover:text-white">Nosotros</a></li>
+    <li><a href="eventos.php" class="hover:text-white">Eventos</a></li>
+    <li><a href="galeria.php" class="hover:text-white">Galería</a></li>
+    <li><a href="contacto.php" class="hover:text-white">Contacto</a></li>
+
+  </ul>
+</div>
+
+<!-- Contacto -->
+<div>
+  <h3 class="text-white font-bold mb-4">
+    Contacto
+  </h3>
+
+  <ul class="space-y-2 text-sm">
+
+    <li>📍 Dirección de la iglesia</li>
+    <li>📞 +57 XXX XXX XXXX</li>
+    <li>✉ info@iglesiaadonai.org</li>
+
+  </ul>
+</div>
+```
+
+  </div>
+
+  <!-- Línea inferior -->
+
+  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+
+```
+© 2025 Iglesia de Restauración Adonai — Todos los derechos reservados.
+```
+
+  </div>
+
+</footer>
+<script>
+    // Menú móvil toggle
+    const btnMenu = document.getElementById('btn-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    btnMenu.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+  </script>
+<script>
+  // Detecta la ruta actual (por ejemplo: 'nosotros.html')
+  const currentPage = window.location.pathname.split('/').pop();
+
+  // Selecciona todos los enlaces del menú (desktop + móvil)
+  const menuLinks = document.querySelectorAll('nav a');
+
+  menuLinks.forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('text-blue-700', 'font-semibold');
+    } else {
+      link.classList.remove('text-blue-700', 'font-semibold');
+    }
+  });
+</script>
+</body>
+</html>
+
