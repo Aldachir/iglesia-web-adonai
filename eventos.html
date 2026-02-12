@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iglesia de Restauración Adonai - Inicio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    nav ul li.group:hover > ul {
+      display: block;
+    }
+  </style>
+  <!-- Font Awesome (iconos redes sociales) -->
+<style>
+
+/* Iconos redes sociales */
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #facc15;
+  transform: translateY(-5px) scale(1.2);
+  text-shadow: 0 0 15px rgba(250, 204, 21, 0.8);
+}
+
+/* Animación fade-in footer */
+.footer-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.footer-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+</style>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="bg-white shadow sticky top-0 z-50">
+
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+    <!-- Logo / Nombre -->
+    <h1 class="text-xl font-bold text-blue-700">
+      Iglesia de Restauración Adonai
+    </h1>
+
+    <!-- Botón móvil -->
+    <button id="btn-menu" class="md:hidden text-blue-700">
+      ☰
+    </button>
+
+    <!-- Menú escritorio -->
+    <ul id="menu" class="hidden md:flex items-center space-x-6 text-sm font-medium">
+
+      <li>
+        <a href="index.html" class="text-blue-700 font-semibold">
+          Inicio
+        </a>
+      </li>
+
+      <li>
+        <a href="nosotros.php" class="hover:text-blue-700">
+          Nosotros
+        </a>
+      </li>
+
+      <!-- Ministerios Mega Menu -->
+      <li class="relative group">
+
+        <!-- Botón -->
+        <button id="btn-ministerios-desktop"
+                class="flex items-center gap-1 cursor-pointer hover:text-blue-600 transition">
+          Ministerios
+          <svg class="w-4 h-4 transition-all duration-300 group-hover:rotate-180 group-hover:text-blue-600"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <!-- Mega Menú Desktop -->
+        <div class="absolute left-1/2 -translate-x-1/2 mt-12
+                    w-[95vw] max-w-[1200px]
+                    opacity-0 invisible translate-y-8 scale-[0.98]
+                    group-hover:opacity-100 group-hover:visible 
+                    group-hover:translate-y-0 group-hover:scale-100
+                    transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]
+                    bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800
+                    rounded-3xl shadow-[0_35px_80px_-15px_rgba(0,0,0,0.25)]
+                    p-12 text-white
+                    lg:block hidden">
+
+          <div class="grid grid-cols-4 gap-14">
+
+            <!-- MINISTERIOS -->
+            <div class="col-span-3 grid grid-cols-2 gap-10">
+
+              <a href="#" class="flex items-start gap-4 p-6 rounded-2xl hover:bg-white/15 transition duration-300">
+                <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2L2 7l8 5 8-5-8-5z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-lg">Hombres de Valor</h4>
+                  <p class="text-sm text-blue-100">Formando líderes con propósito.</p>
+                </div>
+              </a>
+
+              <a href="#" class="flex items-start gap-4 p-6 rounded-2xl hover:bg-white/15 transition duration-300">
+                <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M5 3a7 7 0 1110 0A7 7 0 015 3z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-lg">Impacto Juvenil</h4>
+                  <p class="text-sm text-blue-100">Juventud apasionada por Cristo.</p>
+                </div>
+              </a>
+
+              <a href="#" class="flex items-start gap-4 p-6 rounded-2xl hover:bg-white/15 transition duration-300">
+                <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M4 4h12v12H4z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-lg">Semillitas de Adonai</h4>
+                  <p class="text-sm text-blue-100">Ministerio infantil.</p>
+                </div>
+              </a>
+
+              <a href="#" class="flex items-start gap-4 p-6 rounded-2xl hover:bg-white/15 transition duration-300">
+                <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 3a5 5 0 015 5v4a5 5 0 01-10 0V8a5 5 0 015-5z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-lg">Mujeres</h4>
+                  <p class="text-sm text-blue-100">Fortaleciendo vidas.</p>
+                </div>
+              </a>
+
+              <a href="#" class="flex items-start gap-4 p-6 rounded-2xl hover:bg-white/15 transition duration-300">
+                <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 10h14M10 3v14"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-lg">Alabanza</h4>
+                  <p class="text-sm text-blue-100">Adorando con excelencia.</p>
+                </div>
+              </a>
+
+              <a href="#" class="flex items-start gap-4 p-6 rounded-2xl hover:bg-white/15 transition duration-300">
+                <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a8 8 0 100 16 8 8 0 000-16z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-lg">Saltos de Gloria</h4>
+                  <p class="text-sm text-blue-100">Ministerio de danza.</p>
+                </div>
+              </a>
+
+              <a href="#" class="flex items-start gap-4 p-6 rounded-2xl hover:bg-white/15 transition duration-300">
+                <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 10h16M10 2v16"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-lg">Diáconos y Ujieres</h4>
+                  <p class="text-sm text-blue-100">Servicio y orden en la casa de Dios.</p>
+                </div>
+              </a>
+
+              <a href="#" class="flex items-start gap-4 p-6 rounded-2xl hover:bg-white/15 transition duration-300">
+                <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M12 2a8 8 0 100 16 8 8 0 000-16z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-lg">Evangelismo y Consolidación</h4>
+                  <p class="text-sm text-blue-100">Alcanzando y afirmando vidas.</p>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- PANEL LATERAL PREMIUM -->
+            <div class="bg-white/20 backdrop-blur-xl rounded-3xl p-10 
+                        flex flex-col justify-between border border-white/30">
+
+              <div>
+                <h3 class="text-2xl font-bold mb-4">
+                  Sirve con Propósito
+                </h3>
+                <p class="text-blue-100 leading-relaxed">
+                  Dios ha dado dones a cada persona. Descubre dónde puedes crecer,
+                  servir y transformar vidas.
+                </p>
+              </div>
+
+              <a href="contacto.php"
+                 class="mt-10 bg-white text-blue-600 font-semibold px-6 py-3 
+                        rounded-2xl text-center hover:bg-blue-50 
+                        transition shadow-xl">
+                Unirme a un Ministerio
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </li>
+
+      <li>
+        <a href="eventos.html" class="hover:text-blue-700">
+          Eventos
+        </a>
+      </li>
+
+      <li>
+        <a href="galeria.php" class="hover:text-blue-700">
+          Galería
+        </a>
+      </li>
+
+      <li>
+        <a href="contacto.php" class="hover:text-blue-700">
+          Contacto
+        </a>
+      </li>
+
+      <!-- Botón Donar -->
+      <li>
+        <a href="donar.php"
+           class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded font-semibold">
+          Donar
+        </a>
+      </li>
+
+      <!-- Login -->
+      <li>
+        <a href="login.php"
+           class="border border-blue-700 text-blue-700 px-4 py-2 rounded hover:bg-blue-700 hover:text-white">
+          Iniciar sesión
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!-- Menú móvil -->
+  <div id="mobile-menu" class="md:hidden hidden bg-white shadow">
+    <ul class="flex flex-col p-4 space-y-2 font-medium">
+
+      <li><a href="index.php">Inicio</a></li>
+      <li><a href="nosotros.php">Nosotros</a></li>
+
+      <!-- Ministerios -->
+      <li class="mt-2">
+        <button id="btn-ministerios-mobile"
+                class="w-full flex justify-between items-center font-semibold text-gray-700">
+          Ministerios
+          <span class="text-lg">+</span>
+        </button>
+      </li>
+
+      <!-- Mega móvil (acordeón dentro del móvil) -->
+      <div id="mega-ministerios-mobile"
+     class="hidden mt-2 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800
+            rounded-3xl shadow-lg p-4 text-white">
+
+        <!-- 8 Ministerios móviles -->
+        <a href="#" class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/15 transition">
+          <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 2L2 7l8 5 8-5-8-5z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Hombres de Valor</h4>
+            <p class="text-sm text-blue-100">Formando líderes con propósito.</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/15 transition">
+          <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M5 3a7 7 0 1110 0A7 7 0 015 3z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Impacto Juvenil</h4>
+            <p class="text-sm text-blue-100">Juventud apasionada por Cristo.</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/15 transition">
+          <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M4 4h12v12H4z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Semillitas de Adonai</h4>
+            <p class="text-sm text-blue-100">Ministerio infantil.</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/15 transition">
+          <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 3a5 5 0 015 5v4a5 5 0 01-10 0V8a5 5 0 015-5z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Mujeres</h4>
+            <p class="text-sm text-blue-100">Fortaleciendo vidas.</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/15 transition">
+          <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M3 10h14M10 3v14"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Alabanza</h4>
+            <p class="text-sm text-blue-100">Adorando con excelencia.</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/15 transition">
+          <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 2a8 8 0 100 16 8 8 0 000-16z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Saltos de Gloria</h4>
+            <p class="text-sm text-blue-100">Ministerio de danza.</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/15 transition">
+          <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 10h16M10 2v16"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Diáconos y Ujieres</h4>
+            <p class="text-sm text-blue-100">Servicio y orden en la casa de Dios.</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/15 transition">
+          <div class="bg-white/20 backdrop-blur-md p-3 rounded-xl">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M12 2a8 8 0 100 16 8 8 0 000-16z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">Evangelismo y Consolidación</h4>
+            <p class="text-sm text-blue-100">Alcanzando y afirmando vidas.</p>
+          </div>
+        </a>
+
+        <div class="mt-4 bg-white/20 backdrop-blur-xl rounded-2xl p-4 border border-white/30">
+          <h3 class="text-lg font-bold mb-2">Sirve con Propósito</h3>
+          <p class="text-blue-100 text-sm leading-relaxed">
+            Dios ha dado dones a cada persona. Descubre dónde puedes crecer y servir.
+          </p>
+          <a href="contacto.php"
+             class="mt-3 inline-block bg-white text-blue-600 font-semibold px-5 py-2 rounded-2xl text-center hover:bg-blue-50 transition shadow-xl">
+            Unirme a un Ministerio
+          </a>
+        </div>
+
+      </div>
+
+      <li class="mt-3"><a href="eventos.php">Eventos</a></li>
+      <li><a href="galeria.php">Galería</a></li>
+      <li><a href="contacto.php">Contacto</a></li>
+
+      <li class="mt-3">
+        <a href="donar.php"
+           class="bg-yellow-500 text-white px-3 py-2 rounded block text-center">
+          Donar
+        </a>
+      </li>
+
+      <li>
+        <a href="login.php"
+           class="border border-blue-700 text-blue-700 px-3 py-2 rounded block text-center">
+          Iniciar sesión
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+</nav>
+
+<!-- ================= ÚLTIMOS EVENTOS ================= -->
+
+<section class="bg-gray-100 py-16">
+
+  <div class="max-w-6xl mx-auto px-4">
+
+```
+<h2 class="text-3xl font-bold text-center text-blue-700 mb-12">
+  Últimos eventos
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+  <!-- Evento 1 -->
+  <div class="bg-white rounded shadow overflow-hidden">
+
+    <img src="img/evento1.jpg" alt="Evento iglesia"
+         class="w-full h-48 object-cover">
+
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">
+        Noche de adoración
+      </h3>
+
+      <p class="text-gray-600 mb-4">
+        Una noche especial de alabanza y adoración en la presencia de Dios.
+      </p>
+
+      <a href="eventos.php"
+         class="text-blue-700 font-semibold hover:underline">
+        Ver más →
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Evento 2 -->
+  <div class="bg-white rounded shadow overflow-hidden">
+
+    <img src="img/evento2.jpg" alt="Evento iglesia"
+         class="w-full h-48 object-cover">
+
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">
+        Congreso juvenil
+      </h3>
+
+      <p class="text-gray-600 mb-4">
+        Jóvenes reunidos para aprender y crecer espiritualmente.
+      </p>
+
+      <a href="eventos.php"
+         class="text-blue-700 font-semibold hover:underline">
+        Ver más →
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Evento 3 -->
+  <div class="bg-white rounded shadow overflow-hidden">
+
+    <img src="img/evento3.jpg" alt="Evento iglesia"
+         class="w-full h-48 object-cover">
+
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2">
+        Servicio especial
+      </h3>
+
+      <p class="text-gray-600 mb-4">
+        Celebración especial con toda la congregación.
+      </p>
+
+      <a href="eventos.php"
+         class="text-blue-700 font-semibold hover:underline">
+        Ver más →
+      </a>
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- ================= PRÓXIMOS EVENTOS ================= -->
+
+<section class="py-16 bg-white">
+
+  <div class="max-w-6xl mx-auto px-4">
+
+```
+<h2 class="text-3xl font-bold text-center text-blue-700 mb-12">
+  Próximos Eventos
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+  <!-- Evento 1 -->
+  <div class="bg-gray-100 rounded shadow p-6">
+
+    <h3 class="text-xl font-semibold mb-2">
+      Servicio Especial de Avivamiento
+    </h3>
+
+    <p class="text-sm text-gray-600 mb-2">
+      📅 Domingo 15 - 7:00 PM
+    </p>
+
+    <p class="mb-4">
+      Una noche de adoración y palabra para toda la familia.
+    </p>
+
+    <a href="eventos.php"
+       class="text-blue-700 font-semibold hover:underline">
+      Ver detalles →
+    </a>
+
+  </div>
+
+  <!-- Evento 2 -->
+  <div class="bg-gray-100 rounded shadow p-6">
+
+    <h3 class="text-xl font-semibold mb-2">
+      Encuentro Juvenil
+    </h3>
+
+    <p class="text-sm text-gray-600 mb-2">
+      📅 Viernes 20 - 6:30 PM
+    </p>
+
+    <p class="mb-4">
+      Reunión especial para jóvenes con dinámicas y enseñanza.
+    </p>
+
+    <a href="eventos.php"
+       class="text-blue-700 font-semibold hover:underline">
+      Ver detalles →
+    </a>
+
+  </div>
+
+  <!-- Evento 3 -->
+  <div class="bg-gray-100 rounded shadow p-6">
+
+    <h3 class="text-xl font-semibold mb-2">
+      Jornada de Evangelismo
+    </h3>
+
+    <p class="text-sm text-gray-600 mb-2">
+      📅 Sábado 28 - 9:00 AM
+    </p>
+
+    <p class="mb-4">
+      Salida misionera para compartir el mensaje de esperanza.
+    </p>
+
+    <a href="eventos.php"
+       class="text-blue-700 font-semibold hover:underline">
+      Ver detalles →
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+<!-- ================= FOOTER PREMIUM ================= -->
+
+<footer class="bg-gray-900 text-gray-300 pt-14 pb-8 relative overflow-hidden">
+
+  <!-- Línea decorativa superior -->
+  <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 via-yellow-500 to-blue-600"></div>
+
+  <div class="w-full max-w-screen-2xl mx-auto px-12 grid md:grid-cols-5 gap-10 footer-animate">
+
+    <!-- Iglesia -->
+    <div>
+      <h3 class="text-white font-bold text-lg mb-4">
+        Iglesia de Restauración Adonai
+      </h3>
+      <p class="text-sm leading-relaxed">
+        Restaurados para restaurar vidas, familias y corazones
+        a través del amor de Cristo.
+      </p>
+    </div>
+
+    <!-- Horarios -->
+    <div>
+      <h3 class="text-white font-bold mb-4">Horarios</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Domingo: 8:00 AM – 12:00 PM</li>
+        <li>Miércoles: 7:00 PM</li>
+      </ul>
+    </div>
+
+    <!-- Enlaces -->
+    <div>
+      <h3 class="text-white font-bold mb-4">Enlaces rápidos</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="nosotros.php" class="hover:text-white transition">Nosotros</a></li>
+        <li><a href="eventos.php" class="hover:text-white transition">Eventos</a></li>
+        <li><a href="galeria.php" class="hover:text-white transition">Galería</a></li>
+        <li><a href="contacto.php" class="hover:text-white transition">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Contacto -->
+    <div>
+      <h3 class="text-white font-bold mb-4">Contacto</h3>
+      <ul class="space-y-2 text-sm">
+        <li>📍 Dirección de la iglesia</li>
+        <li>📞 +57 XXX XXX XXXX</li>
+        <li>✉ info@iglesiaadonai.org</li>
+      </ul>
+    </div>
+
+    <!-- Redes sociales -->
+    <div>
+      <h3 class="text-white font-bold mb-4">Redes sociales</h3>
+
+      <div class="flex space-x-5 text-2xl">
+
+        <a href="#" class="social-icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="#" class="social-icon">
+          <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="#" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#" class="social-icon">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+    © 2025 Iglesia de Restauración Adonai — Todos los derechos reservados.
+  </div>
+
+</footer>
+<script>
+const footer = document.querySelector('.footer-animate');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      footer.classList.add('footer-visible');
+    }
+  });
+});
+
+observer.observe(footer);
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+
+    // ----------- MENU ACTIVE LINK -----------
+    const currentPage = window.location.pathname.split('/').pop();
+    const menuLinks = document.querySelectorAll('nav a');
+
+    menuLinks.forEach(link => {
+      const linkPage = link.getAttribute('href');
+      if (linkPage === currentPage) {
+        link.classList.add('text-blue-700', 'font-semibold');
+      } else {
+        link.classList.remove('text-blue-700', 'font-semibold');
+      }
+    });
+
+    // ----------- MENU MOBILE -----------
+    const btnMenu = document.getElementById('btn-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (btnMenu && mobileMenu) {
+      btnMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // ----------- MEGA MENU MOBILE -----------
+    const btnMinMobile = document.getElementById('btn-ministerios-mobile');
+    const megaMobile = document.getElementById('mega-ministerios-mobile');
+
+    if (btnMinMobile && megaMobile) {
+      btnMinMobile.addEventListener('click', () => {
+        megaMobile.classList.toggle('hidden');
+
+        // Cambiar el + por - cuando se abre
+        const icon = btnMinMobile.querySelector('span');
+        if (icon) {
+          icon.textContent = megaMobile.classList.contains('hidden') ? '+' : '−';
+        }
+      });
+    }
+
+  });
+</script>
+</body>
+</html>
